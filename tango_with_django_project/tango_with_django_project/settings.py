@@ -16,6 +16,7 @@ from django.apps import apps
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
 
 
 # Quick-start development settings - unsuitable for production
@@ -31,6 +32,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -71,6 +73,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'tango_with_django_project.wsgi.application'
 
+STATICFILES_DIRS = [STATIC_DIR, ]
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
