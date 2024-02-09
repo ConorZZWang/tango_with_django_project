@@ -1,5 +1,6 @@
 from django.db import models
 from django.template.defaultfilters import slugify
+from django.utils.text import slugify
 
 # Create your models here.
 class Category(models.Model):
